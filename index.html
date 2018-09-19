@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <title>Breaking Bad Game</title>
 </head>
 
@@ -16,45 +17,39 @@
 
   <div class="container">
     <div id="rules" class="jumbotron jumbotron-fluid bg-dark">
-      <h1 class="display-4">The Breaking Bad Bank Game</h1>
+      <h1 id="title" class="display-4">The Breaking Bad Bank Game</h1>
       <br>
-      <p class="lead">There are four pictures of Breaking Bad characters below. By clicking on a character you will add a specific amount of money to your bank roll.</p>
-      <br>
-      <p class="lead">You win by matching your bank roll to a random number, You lose the game if your total score goes above the random number.</p>
-      <p class="lead">The dollar value of each character is kept hidden from you until you click on it.</p>
-      <br>
-      <p class="lead">Each time the game starts, the game will change the dollar values on each character.
+      <p class="lead">There are four pictures of Breaking Bad characters below. By clicking on a character you will add
+        a specific amount of money to your bank roll.
+        You win by matching your bank roll to the winning bank roll, You lose the game if your bank roll goes
+        above the random number because you will incur unnecessary laundering costs.
+        The dollar value of each character is kept hidden from you until you click on it.
+        Each time the game starts, the game will change the dollar values on each character.
       </p>
+      <p id="start" class="lead">CLICK ANY CHARACTER TO START!</p>
+      <p id="start" class="lead">(all dollar values are obviously in millions...these are world class entreprenuers after all.)</p>
     </div>
     <div class="row">
       <div class="card col-md-4 col-12">
-      <h3 id="win">Winning Number: $</h3>
-      <h3 id="score">Money in your bank: $</h3>
-      <h3 id="wins">Wins: </h3>
-      <h3 id="losses">Losses: </h3>
-
-      
-      
-
+        <h3 id="win">Winning Bank Roll: </h3>
+        <h3 id="score">Your Bank Roll: </h3>
+        <h3 id="wins">Wins: </h3>
+        <h3 id="losses">Losses: </h3>
       </div>
       <div class="card col-md-8 col-12">
         <div class="images">
-        <img id="walt" src="assets/images/walt.jpg">
-        <img id="pinkman" src="assets/images/pinkman.jpg">
-        <img id="saul" src="assets/images/saul.jpg">
-        <img id="gus"src="assets/images/gus.jpg">
-        
-      
-
-      
+          <img id="walt" src="assets/images/walt.jpg">
+          <img id="pinkman" src="assets/images/pinkman.jpg">
+          <img id="saul" src="assets/images/saul.jpg">
+          <img id="gus" src="assets/images/gus.jpg">
+        </div>
       </div>
-    </div>
 
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
-    <script src="assets/javascript/javascript.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+      <script src="assets/javascript/javascript.js"></script>
 </body>
 
 </html>

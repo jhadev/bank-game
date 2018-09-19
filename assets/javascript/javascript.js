@@ -14,7 +14,7 @@ var score = 0;
 
 function winningNum() {
   winNum = Math.floor(Math.random() * 102) + 19;
-  $("#win").append(winNum);
+  $("#win").html("<h3>Winning Bank Roll: $" + winNum + "</h3>");
 }
 
 
@@ -26,7 +26,7 @@ function winningNum() {
   
   $("#walt").click(function(){
     score = score + walt;
-    $("#score").text(score);
+    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
     
     if (score === winNum) {
       wins++;
@@ -44,7 +44,7 @@ function winningNum() {
 
   $("#pinkman").click(function(){
     score = score + pinkman;
-    $("#score").text(score);
+    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
 
     if (score === winNum) {
       wins++;
@@ -62,7 +62,7 @@ function winningNum() {
 
   $("#gus").click(function(){
     score = score + gus;
-    $("#score").text(score);
+    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
 
     if (score === winNum) {
       wins++;
@@ -80,7 +80,7 @@ function winningNum() {
 
   $("#saul").click(function(){
     score = score + saul;
-    $("#score").text(score);
+    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
 
     if (score === winNum) {
       wins++;
@@ -100,9 +100,9 @@ function winningNum() {
 //reset function
 function reset() {
   winNum = Math.floor(Math.random() * 102) + 19;
-  $("#win").text(winNum);
+  $("#win").html("<h3>Winning Bank Roll: $" + winNum + "</h3>");
   score = 0;
-  $("#score").text(score);
+  $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
   walt = Math.floor(Math.random() * 12) + 1;
   pinkman = Math.floor(Math.random() * 12) + 1;
   gus = Math.floor(Math.random() * 12) + 1;

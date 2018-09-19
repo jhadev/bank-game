@@ -1,7 +1,11 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 #rules {
   color: white;
- margin-left: 10px;
- margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 img {
@@ -15,7 +19,18 @@ img {
   padding: 20px;
 }
 
-#rules {
+#title {
   text-align: center;
 }
 
+h3 {
+  font-size: 32px;
+}
+
+p {
+  padding: 20px;
+}
+
+#start {
+  text-align: center;
+}
