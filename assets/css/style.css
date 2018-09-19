@@ -1,0 +1,21 @@
+#rules {
+  color: white;
+ margin-left: 10px;
+ margin-right: 10px;
+}
+
+img {
+  width: 160px;
+  height: 214px;
+  border-style: solid;
+}
+
+.images {
+  margin-left: 20px;
+  padding: 20px;
+}
+
+#rules {
+  text-align: center;
+}
+
