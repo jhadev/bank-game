@@ -1,3 +1,4 @@
+$(document).ready(function(){
 //set up variables for game
 var winNum = "";
 var wins = 0;
@@ -20,22 +21,70 @@ function winningNum() {
 
 //create click events for each image
 
-$(document).ready(function(){
+
   
   $("#walt").click(function(){
-    alert("you clicked me")
+    score = score + walt;
+    $("#score").text(score);
   })
 
   $("#pinkman").click(function(){
-    alert("you clicked me")
+    score = score + pinkman;
+    $("#score").text(score);
   })
 
   $("#gus").click(function(){
-    alert("you clicked me")
+    score = score + gus;
+    $("#score").text(score);
   })
 
   $("#saul").click(function(){
-    alert("you clicked me")
+    score = score + saul;
+    $("#score").text(score);
   })
-})
 
+
+//reset function
+function reset() {
+  winNum = Math.floor(Math.random() * 102) + 19;
+  $("#win").text(winNum);
+  score = 0;
+  $("#score").text(score);
+  walt = Math.floor(Math.random() * 12) + 1;
+  pinkman = Math.floor(Math.random() * 12) + 1;
+  gus = Math.floor(Math.random() * 12) + 1;
+  saul = Math.floor(Math.random() * 12) + 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
