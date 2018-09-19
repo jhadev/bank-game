@@ -11,7 +11,31 @@ var saul = Math.floor(Math.random() * 12) + 1;
 var score = 0;
 //create function to randomly choose winning number
 
+function winningNum() {
+  winNum = Math.floor(Math.random() * 102) + 19;
+}
+
+
 //create functions to randomly select value for each image
 
 //create click events for each image
+
+$(document).ready(function(){
+  
+  $("#walt").click(function(){
+    alert("you clicked me")
+  })
+
+  $("#pinkman").click(function(){
+    alert("you clicked me")
+  })
+
+  $("#gus").click(function(){
+    alert("you clicked me")
+  })
+
+  $("#saul").click(function(){
+    alert("you clicked me")
+  })
+})
 
