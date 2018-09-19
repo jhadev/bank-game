@@ -14,6 +14,7 @@ var score = 0;
 
 function winningNum() {
   winNum = Math.floor(Math.random() * 102) + 19;
+  $("#win").append(winNum);
 }
 
 
@@ -26,21 +27,73 @@ function winningNum() {
   $("#walt").click(function(){
     score = score + walt;
     $("#score").text(score);
+    
+    if (score === winNum) {
+      wins++;
+      $("#wins").text(wins);
+      reset();
+    }
+
+    else if (score > winNum) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+
   })
 
   $("#pinkman").click(function(){
     score = score + pinkman;
     $("#score").text(score);
+
+    if (score === winNum) {
+      wins++;
+      $("#wins").text(wins);
+      reset();
+    }
+
+    else if (score > winNum) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+
   })
 
   $("#gus").click(function(){
     score = score + gus;
     $("#score").text(score);
+
+    if (score === winNum) {
+      wins++;
+      $("#wins").text(wins);
+      reset();
+    }
+
+    else if (score > winNum) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+
   })
 
   $("#saul").click(function(){
     score = score + saul;
     $("#score").text(score);
+
+    if (score === winNum) {
+      wins++;
+      $("#wins").text(wins);
+      reset();
+    }
+
+    else if (score > winNum) {
+      losses++;
+      $("#losses").text(losses);
+      reset();
+    }
+
   })
 
 
