@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   function winningNum() {
     winNum = Math.floor(Math.random() * 102) + 19;
-    $("#win").html("<h3>Winning Bank Roll: $</h3>" + winNum + "</h3>");
+    $("#win").html("<h3>Winning Bank Roll: $</h3>" + winNum + ",000,000</h3>");
   }
 
   //create click events for each image
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   $("#walt").click(function () {
     score = score + walt;
-    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
+    $("#score").html("<h3>Your Bank Roll: $" + score + ",000,000</h3>");
 
     if (score === winNum) {
       wins++;
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
   $("#pinkman").click(function () {
     score = score + pinkman;
-    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
+    $("#score").html("<h3>Your Bank Roll: $" + score + ",000,000</h3>");
 
     if (score === winNum) {
       wins++;
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
   $("#gus").click(function () {
     score = score + gus;
-    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
+    $("#score").html("<h3>Your Bank Roll: $" + score + ",000,000</h3>");
 
     if (score === winNum) {
       wins++;
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
   $("#saul").click(function () {
     score = score + saul;
-    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
+    $("#score").html("<h3>Your Bank Roll: $" + score + ",000,000</h3>");
 
     if (score === winNum) {
       wins++;
@@ -95,9 +95,9 @@ $(document).ready(function () {
   //reset function
   function reset() {
     winNum = Math.floor(Math.random() * 102) + 19;
-    $("#win").html("<h3>Winning Bank Roll: $" + winNum + "</h3>");
+    $("#win").html("<h3>Winning Bank Roll: $" + winNum + ",000,000</h3>");
     score = 0;
-    $("#score").html("<h3>Your Bank Roll: $" + score + "</h3>");
+    $("#score").html("<h3>Your Bank Roll: $" + score + ",000,000</h3>");
     walt = Math.floor(Math.random() * 12) + 1;
     pinkman = Math.floor(Math.random() * 12) + 1;
     gus = Math.floor(Math.random() * 12) + 1;
