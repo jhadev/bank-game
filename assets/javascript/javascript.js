@@ -3,8 +3,6 @@ $(document).ready(function(){
 var winNum = "";
 var wins = 0;
 var losses = 0;
-var counter = 0;
-
 var walt = Math.floor(Math.random() * 12) + 1;
 var pinkman = Math.floor(Math.random() * 12) + 1;
 var gus = Math.floor(Math.random() * 12) + 1;
@@ -17,9 +15,6 @@ function winningNum() {
   $("#win").html("<h3>Winning Bank Roll: $" + winNum + "</h3>");
 }
 
-
-//create functions to randomly select value for each image
-
 //create click events for each image
 
 
@@ -30,13 +25,13 @@ function winningNum() {
     
     if (score === winNum) {
       wins++;
-      $("#wins").text(wins);
+      $("#wins").html("<h3>Wins: " + wins + "</h3>");
       reset();
     }
 
     else if (score > winNum) {
       losses++;
-      $("#losses").text(losses);
+      $("#losses").html("<h3>Losses: " + losses + "</h3>");
       reset();
     }
 
@@ -48,13 +43,13 @@ function winningNum() {
 
     if (score === winNum) {
       wins++;
-      $("#wins").text(wins);
+      $("#wins").html("<h3>Wins: " + wins + "</h3>");
       reset();
     }
 
     else if (score > winNum) {
       losses++;
-      $("#losses").text(losses);
+      $("#losses").html("<h3>Losses: " + losses + "</h3>");
       reset();
     }
 
@@ -66,13 +61,13 @@ function winningNum() {
 
     if (score === winNum) {
       wins++;
-      $("#wins").text(wins);
+      $("#wins").html("<h3>Wins: " + wins + "</h3>");
       reset();
     }
 
     else if (score > winNum) {
       losses++;
-      $("#losses").text(losses);
+      $("#losses").html("<h3>Losses: " + losses + "</h3>");
       reset();
     }
 
@@ -84,13 +79,13 @@ function winningNum() {
 
     if (score === winNum) {
       wins++;
-      $("#wins").text(wins);
+      $("#wins").html("<h3>Wins: " + wins + "</h3>");
       reset();
     }
 
     else if (score > winNum) {
       losses++;
-      $("#losses").text(losses);
+      $("#losses").html("<h3>Losses: " + losses + "</h3>");
       reset();
     }
 
