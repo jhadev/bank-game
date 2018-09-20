@@ -2,7 +2,7 @@ $(document).ready(function () {
   //set up variables for game
   var winNum = "";
   var wins = 0;
-  var losses = 0;
+  var losses = -1;
   var walt = Math.floor(Math.random() * 12) + 1;
   var pinkman = Math.floor(Math.random() * 12) + 1;
   var gus = Math.floor(Math.random() * 12) + 1;
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   function winningNum() {
     winNum = Math.floor(Math.random() * 102) + 19;
-    $("#win").html("<h3>Winning Bank Roll: $" + winNum + "</h3>");
+    $("#win").html("<h3>Winning Bank Roll: $</h3>" + winNum + "</h3>");
   }
 
   //create click events for each image
